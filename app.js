@@ -174,7 +174,7 @@ var date = new Date()
 // document.write(date);
 
 //task 2
-// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+ var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 // alert("Current Month Is " +months[date.getMonth()]  )
 
@@ -257,13 +257,31 @@ var date = new Date()
 
 
 // task 12
-// var date2 =date.setFullYear(-100);
+// date.setFullYear(-100);
 
 // alert("cureent date " + date)
-// alert("100 year back " +date2)
+// alert("100 year back " +date)
 
 // task 13
 // var age = +prompt("What is your age")
 // var year = (date.getFullYear())- age
 
 // alert("your date of birth is " +year);
+
+// TASK 14
+
+// var custumer = "Mashood Hussain",
+//     month = months[date.getMonth()],
+//     num_unit = 410,
+//     charge_per_unit = 16,
+//     bill = num_unit* charge_per_unit,
+//     bill_due_date = bill +450;
+// date.setDate(8)
+// document.write("<h2> K-Electric Bill</h2>") 
+// document.write("<br>Custumer Name: "+ custumer)   
+// document.write("<br>Month: "+ month)
+// document.write("<br> Due Date "+ date)
+// document.write("<br>Number of unit: "+ num_unit)
+// document.write("<br>Charges per unit: "+ charge_per_unit)
+// document.write("<br>bill "+ num_unit +"(due date)" )
+// document.write("<br>bill after due date: "+ bill_due_date)
