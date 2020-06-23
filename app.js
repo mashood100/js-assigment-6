@@ -64,7 +64,7 @@
 //     user_upper = user.toProperCase();
 
 // document.write("<br> User input: " + user +"<br> Uppercase: " + user_upper);
-    
+
 //task 11
 
 // var value_num = 33.36;
@@ -104,7 +104,7 @@
 //     else{
 //         alert("enter negative number")
 //     }
-    
+
 // //task 2
 
 // var user_num = +prompt("Enter nagative number");
@@ -174,14 +174,14 @@ var date = new Date()
 // document.write(date);
 
 //task 2
- var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 // alert("Current Month Is " +months[date.getMonth()]  )
 
 
 //task 3
 
- var weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+var weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 // alert("Curent Day is " + weekday[date.getDay()])
 
 //task 4
@@ -285,3 +285,163 @@ var date = new Date()
 // document.write("<br>Charges per unit: "+ charge_per_unit)
 // document.write("<br>bill "+ num_unit +"(due date)" )
 // document.write("<br>bill after due date: "+ bill_due_date)
+
+
+// ============= chapter 35-38
+// task 1
+// function Current_Date(){
+
+//     var date = new Date()
+//     alert(date)
+// }
+// Current_Date()
+
+// // task 2
+// var first_name = prompt("What is your name"),
+//     last_name  = prompt("what is you last name")
+// function greet_user(first_name, last_date){
+
+//     alert("Good Morning, " + first_name + " " + last_name)
+// }
+
+// greet_user(first_name,last_name)
+
+// //task 3
+// var num1 = +prompt("Enter first number") 
+// var num2 = +prompt("Enter 2nd number")
+
+// function add (num1,num2){
+//     alert(num1+num2)
+// }
+
+// add(num1)
+
+// //task 4
+
+// var num1 = +prompt("Enter first number") 
+// var num2 = +prompt("Enter 2nd number")
+// var operater = ("enter operater")
+
+// function calculater(num1,num2,operater){
+
+//     if (operater === "+"){
+//         result =num1 + num2
+//         alert(result)
+//     }
+
+
+// else if (operater === "*"){
+//     result = num1 * num2
+//     alert(result)
+// }
+
+// else if (operater === "/"){
+//     result = num1 / num2
+//     alert(result)
+// }
+
+// else if (operater === "-"){
+//     result =num1 - num2
+//     alert(result)
+// }
+// else{
+//     alert("Enter correct operater")
+// }
+// }
+
+// calculater(num1,num2,operater)
+
+// // task 5
+// var num1 = +prompt("Enter first number")
+// function squ(num1){
+//     relsult = num1**2
+//     alert(result)
+// }
+
+// squ(num1)
+// //task 6
+// var num1 = +prompt("Enter first number")
+// function factorialize(num) {
+//     var result = num;
+//     if (num === 0 || num === 1) 
+//       return 1; 
+//     while (num > 1) { 
+//       num--;
+//       result *= num;
+//     }
+//     alert( result);
+//   }
+//   factorialize(num1);
+
+// // task7
+// var start = +prompt("Enter your number where you want to start counting")
+// var end = +prompt("enter ending number")
+// function counting(start,end){
+
+//     for(var i =start ; i <= end; i++ ){
+//         document.write("<br>" + i )
+//     }
+// }
+
+// // counting(start,end)
+//// task 8
+// function hypo(base,perp){
+//    function squr(num){
+//        squire=num**2
+//        return squire
+//    }
+//    result = squr(base)*squr(perp)
+//    alert("hypotnies is: "+result)
+// }
+
+// hypo(34,54)
+
+//task9
+
+// function area(width,height){
+//  area = width*height
+//  return area
+// }
+
+// alert("Area is eaqual to "+ area(56,34))
+
+// task 10
+
+// function palindrome(str) {
+
+//     str = str.toLowerCase()
+//     var len = str.length;
+//     for (var i = 0; i < len/2; i++) {
+//       if (str[i] !== str[len - 1 - i]) {
+//           return false;
+//       }
+//     }
+//     return true;
+//    }
+//    alert(palindrome("eye"));
+
+
+// task11
+
+// function uppercase(str) {
+
+//     result = str.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
+//     alert(result)
+// }
+
+// uppercase("my name is mashoood")
+
+
+// task 12
+
+// function findLongestWord(str) {
+//     var strSplit = str.split(' ');
+//     var longestWord = 0;
+//     for(var i = 0; i < strSplit.length; i++){
+//       if(strSplit[i].length > longestWord){
+//       longestWord = strSplit[i].length;
+//        }
+//     }
+//     return longestWord;
+//   }
+//  alert( findLongestWord("web development course"))
