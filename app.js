@@ -230,9 +230,40 @@ var date = new Date()
 
 //task 9
 
-// var ramdan = new Date(2020, 3, 18,0)
-// var today = new Date().getTime(ramdan)
-// var days_later =   ramdan-today
-// alert( days_later + " Days has been passed since ramdan") 
+// var date0 = new Date(2015, 0, 0);
+
+// var date1 = new Date(2015, 5, 18);
+
+// var numberOfDays = Math.ceil((date1 - date0) / 8.64e7);
+// alert(numberOfDays + " days have passed since 1st Ramadan, 2015 ");
 
 //task 10
+
+// var date0 = new Date(2015, 5, 17);
+
+// var date1 = new Date(2015, 5, 18);
+
+// var numberOfsec = Math.ceil((date1 - date0) /100*60);
+// alert(numberOfsec + " days have passed since 1st Ramadan, 2015 ");
+
+//task 11
+
+
+
+//  var date2 =date.setHours(-1);
+
+// alert("cureent date " + date)
+// alert("1 hour ago it is" +date2)
+
+
+// task 12
+// var date2 =date.setFullYear(-100);
+
+// alert("cureent date " + date)
+// alert("100 year back " +date2)
+
+// task 13
+// var age = +prompt("What is your age")
+// var year = (date.getFullYear())- age
+
+// alert("your date of birth is " +year);
